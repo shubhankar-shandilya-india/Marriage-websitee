@@ -80,3 +80,10 @@
     position: initial;
   }
 }
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}

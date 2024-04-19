@@ -61,16 +61,12 @@ const SlideNextButton = () => {
 
   return (
     <div className="flexCenter r-buttons">
-      {showPrevButton && (
-        <button onClick={() => swiper.slidePrev()} className="r-prevButton">
+        <button onClick={() => swiper.slidePrev()} className={`r-prevButton ${ showPrevButton? 'visible' : 'hidden'}`}>
           &lt;
         </button>
-      )}
-      {showNextButton && (
-        <button onClick={() => swiper.slideNext()} className="r-nextButton">
+        <button onClick={() => swiper.slideNext()} className={`r-prevButton ${showNextButton ? 'visible' : 'hidden'}`}>
           &gt;
         </button>
-      )}
     </div>
   );
 };
