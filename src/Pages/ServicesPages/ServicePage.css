@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 15px;
-    background-image: url('servicess.jpeg');
+    /* background-image: url('servicess.jpeg'); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -137,7 +137,15 @@
     .list {
         width: 90%; /* Full width on smaller screens */
         padding: 10px; /* Reduce padding on smaller screens */
+
     }
+    .service-item.left{
+        flex-direction: column;
+    }
+    .service-item.right{
+        flex-direction: column;
+    }
+
 }
 
 /* Heading styling */

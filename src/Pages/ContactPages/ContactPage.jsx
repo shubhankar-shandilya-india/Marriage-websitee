@@ -5,14 +5,13 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaWhatsapp } from 'reac
 import './ContactPage.css';
 
 const ContactPage = () => {
-    const [name, setName] = useState("Your Name");
-    const [email, setEmail] = useState('test@gmail.com');
-    const [message, setMessage] = useState('Type your message here');
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
-    const [nameFilled, setNameFilled] = useState(!!name);
-    const [emailFilled, setEmailFilled] = useState(!!email);
-    const [messageFilled, setMessageFilled] = useState(!!message);
-
+    const [nameFilled, setNameFilled] = useState(true);
+    const [emailFilled, setEmailFilled] = useState(true);
+    const [messageFilled, setMessageFilled] = useState(true);
     const [emailValid, setEmailValid] = useState(true);
 
     const handleNameChange = (e) => {
