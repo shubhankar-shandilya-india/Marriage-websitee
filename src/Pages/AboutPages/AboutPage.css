@@ -70,6 +70,11 @@
         flex-direction: column; /* Stack content vertically on smaller screens */
     }
 }
+@media (max-width: 768px) {
+    .our-mission-content{
+        flex-direction: column-reverse; /* Stack content vertically on smaller screens */
+    }
+}
 
 .our-story-text,
 .our-mission-text {
